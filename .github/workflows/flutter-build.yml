@@ -2057,7 +2057,7 @@ jobs:
         with:
           submodules: recursive
 
-       - name: 替换配置
+      - name: 替换配置
         if: env.RELAY_SERVER != '' || env.RS_PUB_KEY != '' || env.CUSTOM_API_URL != ''
         run: |
          python3 .github/scripts/replace_config.py 
